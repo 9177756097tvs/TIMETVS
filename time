@@ -1,0 +1,14 @@
+import datetime
+import pytz
+
+# Set the timezone to IST
+tz = pytz.timezone('Asia/Kolkata')
+
+# Get the current time in IST
+ist_time = datetime.datetime.now(tz)
+
+# Format the time as a string
+ist_time_str = ist_time.strftime('%Y-%m-%d %H:%M:%S %Z%z')
+
+# Display the time
+print('Current IST time:', ist_time_str)
